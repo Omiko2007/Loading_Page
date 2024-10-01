@@ -1,0 +1,158 @@
+* {
+    background-image: url('/imagesFolder/1549356349_o1.jpg'); /* Sets a background image */
+    background-repeat:no repeat; /* Prevents the background from repeating */
+    background-size: fixed; /* Ensures the background covers the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
+    height: 1%;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.parent-box {
+    height: 1000px;
+    position: relative;
+    top: -100%;
+    background-image: none;
+}
+
+.navbar {
+    width: 50vh; /* Width of the navbar */
+    height: 100vh; /* Full height */
+    background-color: white; /* Background color of the navbar */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    left: -500px; /* Start hidden */
+    z-index: 1; /* Ensure it's above other elements */
+    transition: left 0.3s; /* Smooth transition for sliding */
+    background-image: none;
+}
+
+.active_navbar {
+    left: 0; /* Move to visible position */
+    background-image: none;
+}
+
+.menu_icon {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: fixed; /* Fix the icon position */
+    left: 40px; /* Align to the left */
+    top: 20px; /* Align to the top */
+    border-radius: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/imagesFolder/download.jpg');
+}
+
+.menu_icon:hover {
+    opacity: 0.75; /* Change to decimal for consistency */
+    transition: 0.25s;
+    background-image: url('/imagesFolder/download.jpg');
+}
+
+nav {
+    padding-top: 100px; /* Keep existing padding */
+    background-image: none;
+}
+
+nav ul {
+    margin: 0px 30px;
+    background-image: none;
+}
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 30%;
+    transition: 0.2s;
+    background-image: none;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 28px;
+    padding: 10px 30px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    background-image: none;
+}
+
+nav ul li a:hover {
+    transition: 0.25s;
+    color: yellowgreen;
+    background-image: none;
+    background-color: rgb(221, 221, 221);
+    height:7vh;
+}
+
+.navigation {
+    position: relative;
+    top: -65px;
+    background-image: none;
+    text-align: center;
+}
+
+.circle {
+    height: 500px;
+    width: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/imagesFolder/download.jpg');
+    border-radius: 100%;
+    position: relative;
+    left: 34%;
+    top: -20%;
+
+}
+
+
+.box {
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    width: 100%;
+    background-image: none;
+    position: relative;
+    top: 74%;
+    border: 5px solid black;
+    background-image: none;
+}
+
+/* Container for social media links */
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 40%; /* Space between icons */
+    margin-top: 50px; /* Space from the top */
+    background-image: none;
+}
+
+/* Style for each image (icons) */
+.social-links a img {
+    width: 150px;  /* Set icon width */
+    height: 150px; /* Set icon height */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+    background-image: none;
+}
+
+/* Hover effect for the icons */
+.social-links a img:hover {
+    transform: scale(1.2); /* Scale the icon when hovered */
+    background-image: none;
+}
+
+.contact-text {
+    color: greenyellow;
+    text-align: center;
+}
